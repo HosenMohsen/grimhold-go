@@ -1,0 +1,53 @@
+{
+  "start": "crossroads",
+  "regions": [
+    {
+      "id": "crossroads",
+      "name": "Le Carrefour",
+      "description": "Un vieux feu éclaire les routes. Des ombres attendent au bord du chemin.",
+      "danger": 1,
+      "foes": ["rat", "goblin"],
+      "exits": ["ashen-marsh", "whispering-woods"]
+    },
+    {
+      "id": "ashen-marsh",
+      "name": "Le Marais Cendré",
+      "description": "Le brouillard sent le fer. Quelque chose respire sous l'eau.",
+      "danger": 1,
+      "foes": ["goblin", "skeleton"],
+      "exits": ["crossroads", "drowned-chapel"]
+    },
+    {
+      "id": "whispering-woods",
+      "name": "Le Bois des Murmures",
+      "description": "Les branches étouffent la lumière. Des pas suivent les vôtres.",
+      "danger": 2,
+      "foes": ["wolf", "goblin", "skeleton"],
+      "exits": ["crossroads", "forgotten-mine"]
+    },
+    {
+      "id": "drowned-chapel",
+      "name": "La Chapelle Engloutie",
+      "description": "L'eau noire recouvre les bancs. Une cloche sonne sous le sol.",
+      "danger": 2,
+      "foes": ["skeleton", "zombie", "ghoul"],
+      "exits": ["ashen-marsh", "grimhold-keep"]
+    },
+    {
+      "id": "forgotten-mine",
+      "name": "La Mine Oubliée",
+      "description": "Des outils rouillés pendent aux murs. Les tunnels résonnent de grognements.",
+      "danger": 3,
+      "foes": ["goblin", "orc", "ghoul"],
+      "exits": ["whispering-woods", "grimhold-keep"]
+    },
+    {
+      "id": "grimhold-keep",
+      "name": "La Forteresse de Grimhold",
+      "description": "Une porte brisée ouvre sur une cour silencieuse. Les morts gardent les remparts.",
+      "danger": 4,
+      "foes": ["ghoul", "ogre", "skeleton"],
+      "exits": ["drowned-chapel", "forgotten-mine"]
+    }
+  ]
+}
